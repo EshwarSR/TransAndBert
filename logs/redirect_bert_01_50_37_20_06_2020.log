@@ -1,0 +1,519 @@
+I0620 01:50:43.132510 140031330899776 file_utils.py:41] PyTorch version 1.2.0 available.
+I0620 01:50:48.050548 140031330899776 file_utils.py:57] TensorFlow version 2.2.0 available.
+Using TensorFlow backend.
+I0620 01:50:55.119753 140031330899776 tokenization_utils.py:504] loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/eshwarsr/.cache/torch/transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+Time for loading and tokenizing data: 148.6133589744568
+Lengths: 512 512
+[101, 1045, 2387, 2023, 2012, 1996, 4258, 1999, 1996, 2220, 3359, 1005, 1055, 1012, 1996, 2087, 13432, 1998, 12459, 3496, 2003, 2043, 1996, 2446, 2390, 4491, 2007, 3756, 2892, 23187, 3806, 2005, 1996, 2034, 2051, 1012, 1996, 7074, 1998, 2037, 5194, 2024, 3139, 2013, 2132, 2000, 11756, 1006, 2030, 7570, 11253, 1007, 2007, 18823, 9474, 11072, 1012, 1996, 5281, 2329, 3548, 2123, 3806, 15806, 1006, 2069, 1007, 1998, 2320, 2153, 26751, 1996, 8044, 1997, 3806, 1998, 1996, 2446, 17857, 1012, 1996, 3806, 8044, 2693, 2412, 3553, 1010, 2633, 4372, 15985, 17686, 1996, 2329, 12534, 1012, 1996, 7074, 2693, 2830, 3254, 24060, 2135, 1999, 2037, 12459, 2559, 11721, 15185, 1012, 3402, 1037, 6978, 2013, 1996, 12534, 1012, 1012, 1012, 2023, 3806, 2003, 2066, 2053, 2060, 2008, 2027, 2031, 5281, 2077, 1012, 1012, 1012, 1012, 1026, 7987, 1013, 1028, 1026, 7987, 1013, 1028, 2085, 2017, 2097, 2113, 2339, 1045, 2031, 4622, 2023, 3496, 2005, 1996, 2197, 2382, 1009, 2086, 1998, 2145, 13277, 1010, 1045, 2228, 2008, 2017, 2097, 2205, 999, 102]
+
+Padding/truncating all sentences to length 512
+Time for pre processing: 6.605695486068726
+[  101  1045  2387  2023  2012  1996  4258  1999  1996  2220  3359  1005
+  1055  1012  1996  2087 13432  1998 12459  3496  2003  2043  1996  2446
+  2390  4491  2007  3756  2892 23187  3806  2005  1996  2034  2051  1012
+  1996  7074  1998  2037  5194  2024  3139  2013  2132  2000 11756  1006
+  2030  7570 11253  1007  2007 18823  9474 11072  1012  1996  5281  2329
+  3548  2123  3806 15806  1006  2069  1007  1998  2320  2153 26751  1996
+  8044  1997  3806  1998  1996  2446 17857  1012  1996  3806  8044  2693
+  2412  3553  1010  2633  4372 15985 17686  1996  2329 12534  1012  1996
+  7074  2693  2830  3254 24060  2135  1999  2037 12459  2559 11721 15185
+  1012  3402  1037  6978  2013  1996 12534  1012  1012  1012  2023  3806
+  2003  2066  2053  2060  2008  2027  2031  5281  2077  1012  1012  1012
+  1012  1026  7987  1013  1028  1026  7987  1013  1028  2085  2017  2097
+  2113  2339  1045  2031  4622  2023  3496  2005  1996  2197  2382  1009
+  2086  1998  2145 13277  1010  1045  2228  2008  2017  2097  2205   999
+   102     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0     0     0     0     0
+     0     0     0     0     0     0     0     0]
+[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+[0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+ 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+ 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+ 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+ 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+ 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+ 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+ 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+ 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+ 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1]
+I0620 01:53:31.901021 140031330899776 configuration_utils.py:283] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-config.json from cache at /home/eshwarsr/.cache/torch/transformers/4dad0251492946e18ac39290fcfe91b89d370fee250efe9521476438fe8ca185.7156163d5fdc189c3016baca0775ffce230789d7fa2a42ef516483e4ca884517
+I0620 01:53:31.902465 140031330899776 configuration_utils.py:319] Model config BertConfig {
+  "_num_labels": 3,
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "bad_words_ids": null,
+  "bos_token_id": null,
+  "decoder_start_token_id": null,
+  "do_sample": false,
+  "early_stopping": false,
+  "eos_token_id": null,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "id2label": {
+    "0": "LABEL_0",
+    "1": "LABEL_1",
+    "2": "LABEL_2"
+  },
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "is_decoder": false,
+  "is_encoder_decoder": false,
+  "label2id": {
+    "LABEL_0": 0,
+    "LABEL_1": 1,
+    "LABEL_2": 2
+  },
+  "layer_norm_eps": 1e-12,
+  "length_penalty": 1.0,
+  "max_length": 20,
+  "max_position_embeddings": 512,
+  "min_length": 0,
+  "model_type": "bert",
+  "no_repeat_ngram_size": 0,
+  "num_attention_heads": 12,
+  "num_beams": 1,
+  "num_hidden_layers": 12,
+  "num_return_sequences": 1,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "output_past": true,
+  "pad_token_id": 0,
+  "prefix": null,
+  "pruned_heads": {},
+  "repetition_penalty": 1.0,
+  "task_specific_params": null,
+  "temperature": 1.0,
+  "top_k": 50,
+  "top_p": 1.0,
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "use_bfloat16": false,
+  "vocab_size": 30522
+}
+
+I0620 01:53:32.883568 140031330899776 modeling_utils.py:507] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-pytorch_model.bin from cache at /home/eshwarsr/.cache/torch/transformers/aa1ef1aede4482d0dbcd4d52baad8ae300e60902e88fcb0bebdec09afd232066.36ca03ab34a1a5d5fa7bc3d03d55c4fa650fed07220e2eeebc06ce58d0e9a157
+I0620 01:53:35.707614 140031330899776 modeling_utils.py:601] Weights of BertForSequenceClassification not initialized from pretrained model: ['classifier.weight', 'classifier.bias']
+I0620 01:53:35.707787 140031330899776 modeling_utils.py:607] Weights from pretrained model not used in BertForSequenceClassification: ['cls.predictions.bias', 'cls.predictions.transform.dense.weight', 'cls.predictions.transform.dense.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight', 'cls.seq_relationship.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias']
+
+======== Epoch 1 / 5 ========
+Training...
+  Batch   100  of  5,000.    Elapsed: 0:00:26.
+  Batch   200  of  5,000.    Elapsed: 0:00:51.
+  Batch   300  of  5,000.    Elapsed: 0:01:17.
+  Batch   400  of  5,000.    Elapsed: 0:01:43.
+  Batch   500  of  5,000.    Elapsed: 0:02:08.
+  Batch   600  of  5,000.    Elapsed: 0:02:34.
+  Batch   700  of  5,000.    Elapsed: 0:03:00.
+  Batch   800  of  5,000.    Elapsed: 0:03:26.
+  Batch   900  of  5,000.    Elapsed: 0:03:52.
+  Batch 1,000  of  5,000.    Elapsed: 0:04:18.
+  Batch 1,100  of  5,000.    Elapsed: 0:04:43.
+  Batch 1,200  of  5,000.    Elapsed: 0:05:09.
+  Batch 1,300  of  5,000.    Elapsed: 0:05:35.
+  Batch 1,400  of  5,000.    Elapsed: 0:06:01.
+  Batch 1,500  of  5,000.    Elapsed: 0:06:27.
+  Batch 1,600  of  5,000.    Elapsed: 0:06:53.
+  Batch 1,700  of  5,000.    Elapsed: 0:07:18.
+  Batch 1,800  of  5,000.    Elapsed: 0:07:44.
+  Batch 1,900  of  5,000.    Elapsed: 0:08:10.
+  Batch 2,000  of  5,000.    Elapsed: 0:08:36.
+  Batch 2,100  of  5,000.    Elapsed: 0:09:02.
+  Batch 2,200  of  5,000.    Elapsed: 0:09:27.
+  Batch 2,300  of  5,000.    Elapsed: 0:09:53.
+  Batch 2,400  of  5,000.    Elapsed: 0:10:19.
+  Batch 2,500  of  5,000.    Elapsed: 0:10:45.
+  Batch 2,600  of  5,000.    Elapsed: 0:11:11.
+  Batch 2,700  of  5,000.    Elapsed: 0:11:36.
+  Batch 2,800  of  5,000.    Elapsed: 0:12:02.
+  Batch 2,900  of  5,000.    Elapsed: 0:12:28.
+  Batch 3,000  of  5,000.    Elapsed: 0:12:54.
+  Batch 3,100  of  5,000.    Elapsed: 0:13:20.
+  Batch 3,200  of  5,000.    Elapsed: 0:13:45.
+  Batch 3,300  of  5,000.    Elapsed: 0:14:11.
+  Batch 3,400  of  5,000.    Elapsed: 0:14:37.
+  Batch 3,500  of  5,000.    Elapsed: 0:15:03.
+  Batch 3,600  of  5,000.    Elapsed: 0:15:29.
+  Batch 3,700  of  5,000.    Elapsed: 0:15:54.
+  Batch 3,800  of  5,000.    Elapsed: 0:16:20.
+  Batch 3,900  of  5,000.    Elapsed: 0:16:46.
+  Batch 4,000  of  5,000.    Elapsed: 0:17:12.
+  Batch 4,100  of  5,000.    Elapsed: 0:17:37.
+  Batch 4,200  of  5,000.    Elapsed: 0:18:03.
+  Batch 4,300  of  5,000.    Elapsed: 0:18:29.
+  Batch 4,400  of  5,000.    Elapsed: 0:18:55.
+  Batch 4,500  of  5,000.    Elapsed: 0:19:20.
+  Batch 4,600  of  5,000.    Elapsed: 0:19:46.
+  Batch 4,700  of  5,000.    Elapsed: 0:20:12.
+  Batch 4,800  of  5,000.    Elapsed: 0:20:38.
+  Batch 4,900  of  5,000.    Elapsed: 0:21:03.
+
+  Average training loss: 0.39
+  Training epoch took: 0:21:29
+
+Running Validation...
+Starting Evaluation for epoch: 1
+Time taken for train evaluation 386.5049204826355
+Time taken for validation evaluation 96.81768894195557
+
+
+=========================
+Time elapsed: 1773.8352344036102
+Epoch: 1/5
+Epoch time: 1773.8352525234222
+Train Acc: 0.96035
+Validation Acc: 0.9298
+Train Loss: tensor(0.1510, device='cuda:0')
+Validation Loss: tensor(0.2782, device='cuda:0')
+=========================
+
+
+  Validation took: 0:08:05
+Saving model to models/bert-base-uncased/0
+I0620 02:23:12.945465 140031330899776 configuration_utils.py:142] Configuration saved in models/bert-base-uncased/0/config.json
+I0620 02:23:20.736642 140031330899776 modeling_utils.py:343] Model weights saved in models/bert-base-uncased/0/pytorch_model.bin
+
+======== Epoch 2 / 5 ========
+Training...
+  Batch   100  of  5,000.    Elapsed: 0:00:26.
+  Batch   200  of  5,000.    Elapsed: 0:00:51.
+  Batch   300  of  5,000.    Elapsed: 0:01:17.
+  Batch   400  of  5,000.    Elapsed: 0:01:43.
+  Batch   500  of  5,000.    Elapsed: 0:02:08.
+  Batch   600  of  5,000.    Elapsed: 0:02:34.
+  Batch   700  of  5,000.    Elapsed: 0:03:00.
+  Batch   800  of  5,000.    Elapsed: 0:03:26.
+  Batch   900  of  5,000.    Elapsed: 0:03:51.
+  Batch 1,000  of  5,000.    Elapsed: 0:04:17.
+  Batch 1,100  of  5,000.    Elapsed: 0:04:43.
+  Batch 1,200  of  5,000.    Elapsed: 0:05:08.
+  Batch 1,300  of  5,000.    Elapsed: 0:05:34.
+  Batch 1,400  of  5,000.    Elapsed: 0:06:00.
+  Batch 1,500  of  5,000.    Elapsed: 0:06:25.
+  Batch 1,600  of  5,000.    Elapsed: 0:06:51.
+  Batch 1,700  of  5,000.    Elapsed: 0:07:17.
+  Batch 1,800  of  5,000.    Elapsed: 0:07:42.
+  Batch 1,900  of  5,000.    Elapsed: 0:08:08.
+  Batch 2,000  of  5,000.    Elapsed: 0:08:34.
+  Batch 2,100  of  5,000.    Elapsed: 0:08:59.
+  Batch 2,200  of  5,000.    Elapsed: 0:09:25.
+  Batch 2,300  of  5,000.    Elapsed: 0:09:51.
+  Batch 2,400  of  5,000.    Elapsed: 0:10:16.
+  Batch 2,500  of  5,000.    Elapsed: 0:10:42.
+  Batch 2,600  of  5,000.    Elapsed: 0:11:08.
+  Batch 2,700  of  5,000.    Elapsed: 0:11:33.
+  Batch 2,800  of  5,000.    Elapsed: 0:11:59.
+  Batch 2,900  of  5,000.    Elapsed: 0:12:25.
+  Batch 3,000  of  5,000.    Elapsed: 0:12:50.
+  Batch 3,100  of  5,000.    Elapsed: 0:13:16.
+  Batch 3,200  of  5,000.    Elapsed: 0:13:42.
+  Batch 3,300  of  5,000.    Elapsed: 0:14:08.
+  Batch 3,400  of  5,000.    Elapsed: 0:14:33.
+  Batch 3,500  of  5,000.    Elapsed: 0:14:59.
+  Batch 3,600  of  5,000.    Elapsed: 0:15:25.
+  Batch 3,700  of  5,000.    Elapsed: 0:15:50.
+  Batch 3,800  of  5,000.    Elapsed: 0:16:16.
+  Batch 3,900  of  5,000.    Elapsed: 0:16:42.
+  Batch 4,000  of  5,000.    Elapsed: 0:17:07.
+  Batch 4,100  of  5,000.    Elapsed: 0:17:33.
+  Batch 4,200  of  5,000.    Elapsed: 0:17:59.
+  Batch 4,300  of  5,000.    Elapsed: 0:18:24.
+  Batch 4,400  of  5,000.    Elapsed: 0:18:50.
+  Batch 4,500  of  5,000.    Elapsed: 0:19:16.
+  Batch 4,600  of  5,000.    Elapsed: 0:19:41.
+  Batch 4,700  of  5,000.    Elapsed: 0:20:07.
+  Batch 4,800  of  5,000.    Elapsed: 0:20:33.
+  Batch 4,900  of  5,000.    Elapsed: 0:20:59.
+
+  Average training loss: 0.21
+  Training epoch took: 0:21:24
+
+Running Validation...
+Starting Evaluation for epoch: 2
+Time taken for train evaluation 386.59427881240845
+Time taken for validation evaluation 96.78392505645752
+
+
+=========================
+Time elapsed: 3550.377979040146
+Epoch: 2/5
+Epoch time: 1768.4635472297668
+Train Acc: 0.98735
+Validation Acc: 0.934
+Train Loss: tensor(0.0615, device='cuda:0')
+Validation Loss: tensor(0.3331, device='cuda:0')
+=========================
+
+
+  Validation took: 0:08:04
+Saving model to models/bert-base-uncased/1
+I0620 02:52:49.513925 140031330899776 configuration_utils.py:142] Configuration saved in models/bert-base-uncased/1/config.json
+I0620 02:52:58.098917 140031330899776 modeling_utils.py:343] Model weights saved in models/bert-base-uncased/1/pytorch_model.bin
+
+======== Epoch 3 / 5 ========
+Training...
+  Batch   100  of  5,000.    Elapsed: 0:00:26.
+  Batch   200  of  5,000.    Elapsed: 0:00:51.
+  Batch   300  of  5,000.    Elapsed: 0:01:17.
+  Batch   400  of  5,000.    Elapsed: 0:01:43.
+  Batch   500  of  5,000.    Elapsed: 0:02:08.
+  Batch   600  of  5,000.    Elapsed: 0:02:34.
+  Batch   700  of  5,000.    Elapsed: 0:03:00.
+  Batch   800  of  5,000.    Elapsed: 0:03:25.
+  Batch   900  of  5,000.    Elapsed: 0:03:51.
+  Batch 1,000  of  5,000.    Elapsed: 0:04:17.
+  Batch 1,100  of  5,000.    Elapsed: 0:04:42.
+  Batch 1,200  of  5,000.    Elapsed: 0:05:08.
+  Batch 1,300  of  5,000.    Elapsed: 0:05:33.
+  Batch 1,400  of  5,000.    Elapsed: 0:05:59.
+  Batch 1,500  of  5,000.    Elapsed: 0:06:25.
+  Batch 1,600  of  5,000.    Elapsed: 0:06:50.
+  Batch 1,700  of  5,000.    Elapsed: 0:07:16.
+  Batch 1,800  of  5,000.    Elapsed: 0:07:42.
+  Batch 1,900  of  5,000.    Elapsed: 0:08:07.
+  Batch 2,000  of  5,000.    Elapsed: 0:08:33.
+  Batch 2,100  of  5,000.    Elapsed: 0:08:58.
+  Batch 2,200  of  5,000.    Elapsed: 0:09:24.
+  Batch 2,300  of  5,000.    Elapsed: 0:09:50.
+  Batch 2,400  of  5,000.    Elapsed: 0:10:15.
+  Batch 2,500  of  5,000.    Elapsed: 0:10:41.
+  Batch 2,600  of  5,000.    Elapsed: 0:11:07.
+  Batch 2,700  of  5,000.    Elapsed: 0:11:32.
+  Batch 2,800  of  5,000.    Elapsed: 0:11:58.
+  Batch 2,900  of  5,000.    Elapsed: 0:12:24.
+  Batch 3,000  of  5,000.    Elapsed: 0:12:49.
+  Batch 3,100  of  5,000.    Elapsed: 0:13:15.
+  Batch 3,200  of  5,000.    Elapsed: 0:13:40.
+  Batch 3,300  of  5,000.    Elapsed: 0:14:06.
+  Batch 3,400  of  5,000.    Elapsed: 0:14:32.
+  Batch 3,500  of  5,000.    Elapsed: 0:14:57.
+  Batch 3,600  of  5,000.    Elapsed: 0:15:23.
+  Batch 3,700  of  5,000.    Elapsed: 0:15:49.
+  Batch 3,800  of  5,000.    Elapsed: 0:16:14.
+  Batch 3,900  of  5,000.    Elapsed: 0:16:40.
+  Batch 4,000  of  5,000.    Elapsed: 0:17:06.
+  Batch 4,100  of  5,000.    Elapsed: 0:17:31.
+  Batch 4,200  of  5,000.    Elapsed: 0:17:57.
+  Batch 4,300  of  5,000.    Elapsed: 0:18:22.
+  Batch 4,400  of  5,000.    Elapsed: 0:18:48.
+  Batch 4,500  of  5,000.    Elapsed: 0:19:14.
+  Batch 4,600  of  5,000.    Elapsed: 0:19:39.
+  Batch 4,700  of  5,000.    Elapsed: 0:20:05.
+  Batch 4,800  of  5,000.    Elapsed: 0:20:31.
+  Batch 4,900  of  5,000.    Elapsed: 0:20:56.
+
+  Average training loss: 0.09
+  Training epoch took: 0:21:22
+
+Running Validation...
+Starting Evaluation for epoch: 3
+Time taken for train evaluation 386.81834411621094
+Time taken for validation evaluation 96.80280661582947
+
+
+=========================
+Time elapsed: 5325.395482778549
+Epoch: 3/5
+Epoch time: 1766.1264352798462
+Train Acc: 0.997
+Validation Acc: 0.9418
+Train Loss: tensor(0.0192, device='cuda:0')
+Validation Loss: tensor(0.3967, device='cuda:0')
+=========================
+
+
+  Validation took: 0:08:04
+Saving model to models/bert-base-uncased/2
+I0620 03:22:24.487169 140031330899776 configuration_utils.py:142] Configuration saved in models/bert-base-uncased/2/config.json
+I0620 03:22:32.359538 140031330899776 modeling_utils.py:343] Model weights saved in models/bert-base-uncased/2/pytorch_model.bin
+
+======== Epoch 4 / 5 ========
+Training...
+  Batch   100  of  5,000.    Elapsed: 0:00:26.
+  Batch   200  of  5,000.    Elapsed: 0:00:51.
+  Batch   300  of  5,000.    Elapsed: 0:01:17.
+  Batch   400  of  5,000.    Elapsed: 0:01:43.
+  Batch   500  of  5,000.    Elapsed: 0:02:08.
+  Batch   600  of  5,000.    Elapsed: 0:02:34.
+  Batch   700  of  5,000.    Elapsed: 0:03:00.
+  Batch   800  of  5,000.    Elapsed: 0:03:25.
+  Batch   900  of  5,000.    Elapsed: 0:03:51.
+  Batch 1,000  of  5,000.    Elapsed: 0:04:17.
+  Batch 1,100  of  5,000.    Elapsed: 0:04:42.
+  Batch 1,200  of  5,000.    Elapsed: 0:05:08.
+  Batch 1,300  of  5,000.    Elapsed: 0:05:33.
+  Batch 1,400  of  5,000.    Elapsed: 0:05:59.
+  Batch 1,500  of  5,000.    Elapsed: 0:06:25.
+  Batch 1,600  of  5,000.    Elapsed: 0:06:50.
+  Batch 1,700  of  5,000.    Elapsed: 0:07:16.
+  Batch 1,800  of  5,000.    Elapsed: 0:07:42.
+  Batch 1,900  of  5,000.    Elapsed: 0:08:07.
+  Batch 2,000  of  5,000.    Elapsed: 0:08:33.
+  Batch 2,100  of  5,000.    Elapsed: 0:08:59.
+  Batch 2,200  of  5,000.    Elapsed: 0:09:24.
+  Batch 2,300  of  5,000.    Elapsed: 0:09:50.
+  Batch 2,400  of  5,000.    Elapsed: 0:10:16.
+  Batch 2,500  of  5,000.    Elapsed: 0:10:41.
+  Batch 2,600  of  5,000.    Elapsed: 0:11:07.
+  Batch 2,700  of  5,000.    Elapsed: 0:11:32.
+  Batch 2,800  of  5,000.    Elapsed: 0:11:58.
+  Batch 2,900  of  5,000.    Elapsed: 0:12:24.
+  Batch 3,000  of  5,000.    Elapsed: 0:12:49.
+  Batch 3,100  of  5,000.    Elapsed: 0:13:15.
+  Batch 3,200  of  5,000.    Elapsed: 0:13:41.
+  Batch 3,300  of  5,000.    Elapsed: 0:14:06.
+  Batch 3,400  of  5,000.    Elapsed: 0:14:32.
+  Batch 3,500  of  5,000.    Elapsed: 0:14:58.
+  Batch 3,600  of  5,000.    Elapsed: 0:15:23.
+  Batch 3,700  of  5,000.    Elapsed: 0:15:49.
+  Batch 3,800  of  5,000.    Elapsed: 0:16:15.
+  Batch 3,900  of  5,000.    Elapsed: 0:16:40.
+  Batch 4,000  of  5,000.    Elapsed: 0:17:06.
+  Batch 4,100  of  5,000.    Elapsed: 0:17:31.
+  Batch 4,200  of  5,000.    Elapsed: 0:17:57.
+  Batch 4,300  of  5,000.    Elapsed: 0:18:23.
+  Batch 4,400  of  5,000.    Elapsed: 0:18:48.
+  Batch 4,500  of  5,000.    Elapsed: 0:19:14.
+  Batch 4,600  of  5,000.    Elapsed: 0:19:40.
+  Batch 4,700  of  5,000.    Elapsed: 0:20:05.
+  Batch 4,800  of  5,000.    Elapsed: 0:20:31.
+  Batch 4,900  of  5,000.    Elapsed: 0:20:56.
+
+  Average training loss: 0.04
+  Training epoch took: 0:21:22
+
+Running Validation...
+Starting Evaluation for epoch: 4
+Time taken for train evaluation 386.78270292282104
+Time taken for validation evaluation 96.76550364494324
+
+
+=========================
+Time elapsed: 7099.836895704269
+Epoch: 4/5
+Epoch time: 1766.298151731491
+Train Acc: 0.9986
+Validation Acc: 0.9388
+Train Loss: tensor(0.0102, device='cuda:0')
+Validation Loss: tensor(0.4835, device='cuda:0')
+=========================
+
+
+  Validation took: 0:08:04
+Saving model to models/bert-base-uncased/3
+I0620 03:51:58.945518 140031330899776 configuration_utils.py:142] Configuration saved in models/bert-base-uncased/3/config.json
+I0620 03:52:05.760421 140031330899776 modeling_utils.py:343] Model weights saved in models/bert-base-uncased/3/pytorch_model.bin
+
+======== Epoch 5 / 5 ========
+Training...
+  Batch   100  of  5,000.    Elapsed: 0:00:26.
+  Batch   200  of  5,000.    Elapsed: 0:00:51.
+  Batch   300  of  5,000.    Elapsed: 0:01:17.
+  Batch   400  of  5,000.    Elapsed: 0:01:43.
+  Batch   500  of  5,000.    Elapsed: 0:02:08.
+  Batch   600  of  5,000.    Elapsed: 0:02:34.
+  Batch   700  of  5,000.    Elapsed: 0:03:00.
+  Batch   800  of  5,000.    Elapsed: 0:03:25.
+  Batch   900  of  5,000.    Elapsed: 0:03:51.
+  Batch 1,000  of  5,000.    Elapsed: 0:04:16.
+  Batch 1,100  of  5,000.    Elapsed: 0:04:42.
+  Batch 1,200  of  5,000.    Elapsed: 0:05:08.
+  Batch 1,300  of  5,000.    Elapsed: 0:05:33.
+  Batch 1,400  of  5,000.    Elapsed: 0:05:59.
+  Batch 1,500  of  5,000.    Elapsed: 0:06:25.
+  Batch 1,600  of  5,000.    Elapsed: 0:06:50.
+  Batch 1,700  of  5,000.    Elapsed: 0:07:16.
+  Batch 1,800  of  5,000.    Elapsed: 0:07:41.
+  Batch 1,900  of  5,000.    Elapsed: 0:08:07.
+  Batch 2,000  of  5,000.    Elapsed: 0:08:33.
+  Batch 2,100  of  5,000.    Elapsed: 0:08:58.
+  Batch 2,200  of  5,000.    Elapsed: 0:09:24.
+  Batch 2,300  of  5,000.    Elapsed: 0:09:50.
+  Batch 2,400  of  5,000.    Elapsed: 0:10:15.
+  Batch 2,500  of  5,000.    Elapsed: 0:10:41.
+  Batch 2,600  of  5,000.    Elapsed: 0:11:06.
+  Batch 2,700  of  5,000.    Elapsed: 0:11:32.
+  Batch 2,800  of  5,000.    Elapsed: 0:11:58.
+  Batch 2,900  of  5,000.    Elapsed: 0:12:23.
+  Batch 3,000  of  5,000.    Elapsed: 0:12:49.
+  Batch 3,100  of  5,000.    Elapsed: 0:13:15.
+  Batch 3,200  of  5,000.    Elapsed: 0:13:40.
+  Batch 3,300  of  5,000.    Elapsed: 0:14:06.
+  Batch 3,400  of  5,000.    Elapsed: 0:14:31.
+  Batch 3,500  of  5,000.    Elapsed: 0:14:57.
+  Batch 3,600  of  5,000.    Elapsed: 0:15:23.
+  Batch 3,700  of  5,000.    Elapsed: 0:15:48.
+  Batch 3,800  of  5,000.    Elapsed: 0:16:14.
+  Batch 3,900  of  5,000.    Elapsed: 0:16:40.
+  Batch 4,000  of  5,000.    Elapsed: 0:17:05.
+  Batch 4,100  of  5,000.    Elapsed: 0:17:31.
+  Batch 4,200  of  5,000.    Elapsed: 0:17:56.
+  Batch 4,300  of  5,000.    Elapsed: 0:18:22.
+  Batch 4,400  of  5,000.    Elapsed: 0:18:48.
+  Batch 4,500  of  5,000.    Elapsed: 0:19:13.
+  Batch 4,600  of  5,000.    Elapsed: 0:19:39.
+  Batch 4,700  of  5,000.    Elapsed: 0:20:05.
+  Batch 4,800  of  5,000.    Elapsed: 0:20:30.
+  Batch 4,900  of  5,000.    Elapsed: 0:20:56.
+
+  Average training loss: 0.01
+  Training epoch took: 0:21:21
+
+Running Validation...
+Starting Evaluation for epoch: 5
+Time taken for train evaluation 386.5495591163635
+Time taken for validation evaluation 96.78676795959473
+
+
+=========================
+Time elapsed: 8872.60544347763
+Epoch: 5/5
+Epoch time: 1765.68026638031
+Train Acc: 0.99935
+Validation Acc: 0.9408
+Train Loss: tensor(0.0057, device='cuda:0')
+Validation Loss: tensor(0.4724, device='cuda:0')
+=========================
+
+
+  Validation took: 0:08:04
+Saving model to models/bert-base-uncased/4
+I0620 04:21:31.702062 140031330899776 configuration_utils.py:142] Configuration saved in models/bert-base-uncased/4/config.json
+I0620 04:21:40.864771 140031330899776 modeling_utils.py:343] Model weights saved in models/bert-base-uncased/4/pytorch_model.bin
+
+Training complete!
+Done
+TEST Accuracy: 0.937

@@ -1,0 +1,305 @@
+Running the experiment exp1 on GPU 0
+Running on the device cuda:0
+Loading Dataset
+downloading aclImdb_v1.tar.gz
+aclImdb_v1.tar.gz:   0%|          | 0.00/84.1M [00:00<?, ?B/s]aclImdb_v1.tar.gz:   0%|          | 16.4k/84.1M [00:00<25:51, 54.2kB/s]aclImdb_v1.tar.gz:   0%|          | 49.2k/84.1M [00:00<22:02, 63.6kB/s]aclImdb_v1.tar.gz:   0%|          | 81.9k/84.1M [00:00<19:18, 72.5kB/s]aclImdb_v1.tar.gz:   0%|          | 180k/84.1M [00:01<14:49, 94.4kB/s] aclImdb_v1.tar.gz:   0%|          | 311k/84.1M [00:01<11:19, 123kB/s] aclImdb_v1.tar.gz:   1%|          | 492k/84.1M [00:01<08:37, 162kB/s]aclImdb_v1.tar.gz:   1%|          | 786k/84.1M [00:02<06:26, 215kB/s]aclImdb_v1.tar.gz:   1%|▏         | 1.23M/84.1M [00:02<04:46, 289kB/s]aclImdb_v1.tar.gz:   2%|▏         | 1.79M/84.1M [00:02<03:32, 387kB/s]aclImdb_v1.tar.gz:   3%|▎         | 2.67M/84.1M [00:03<02:35, 523kB/s]aclImdb_v1.tar.gz:   5%|▍         | 3.87M/84.1M [00:03<01:49, 733kB/s]aclImdb_v1.tar.gz:   5%|▌         | 4.34M/84.1M [00:03<01:28, 903kB/s]aclImdb_v1.tar.gz:   7%|▋         | 5.47M/84.1M [00:03<01:06, 1.18MB/s]aclImdb_v1.tar.gz:   8%|▊         | 6.67M/84.1M [00:03<00:47, 1.62MB/s]aclImdb_v1.tar.gz:   9%|▊         | 7.31M/84.1M [00:03<00:41, 1.86MB/s]aclImdb_v1.tar.gz:  10%|█         | 8.50M/84.1M [00:04<00:30, 2.48MB/s]aclImdb_v1.tar.gz:  11%|█         | 9.24M/84.1M [00:04<00:28, 2.65MB/s]aclImdb_v1.tar.gz:  12%|█▏        | 10.2M/84.1M [00:04<00:25, 2.90MB/s]aclImdb_v1.tar.gz:  13%|█▎        | 10.8M/84.1M [00:04<00:28, 2.59MB/s]aclImdb_v1.tar.gz:  14%|█▍        | 12.0M/84.1M [00:05<00:21, 3.38MB/s]aclImdb_v1.tar.gz:  15%|█▌        | 12.7M/84.1M [00:05<00:31, 2.24MB/s]aclImdb_v1.tar.gz:  16%|█▌        | 13.2M/84.1M [00:06<01:09, 1.02MB/s]aclImdb_v1.tar.gz:  17%|█▋        | 14.4M/84.1M [00:06<00:49, 1.40MB/s]aclImdb_v1.tar.gz:  18%|█▊        | 15.0M/84.1M [00:07<00:52, 1.32MB/s]aclImdb_v1.tar.gz:  19%|█▉        | 16.0M/84.1M [00:07<00:41, 1.65MB/s]aclImdb_v1.tar.gz:  20%|██        | 17.2M/84.1M [00:07<00:30, 2.22MB/s]aclImdb_v1.tar.gz:  21%|██▏       | 17.9M/84.1M [00:07<00:27, 2.39MB/s]aclImdb_v1.tar.gz:  23%|██▎       | 19.1M/84.1M [00:07<00:20, 3.15MB/s]aclImdb_v1.tar.gz:  24%|██▎       | 19.8M/84.1M [00:08<00:20, 3.16MB/s]aclImdb_v1.tar.gz:  25%|██▍       | 20.7M/84.1M [00:08<00:19, 3.28MB/s]aclImdb_v1.tar.gz:  26%|██▌       | 21.9M/84.1M [00:08<00:14, 4.19MB/s]aclImdb_v1.tar.gz:  27%|██▋       | 22.7M/84.1M [00:08<00:16, 3.81MB/s]aclImdb_v1.tar.gz:  28%|██▊       | 23.9M/84.1M [00:08<00:12, 4.78MB/s]aclImdb_v1.tar.gz:  29%|██▉       | 24.7M/84.1M [00:09<00:14, 4.20MB/s]aclImdb_v1.tar.gz:  30%|███       | 25.4M/84.1M [00:09<00:15, 3.87MB/s]aclImdb_v1.tar.gz:  32%|███▏      | 26.6M/84.1M [00:09<00:11, 4.85MB/s]aclImdb_v1.tar.gz:  33%|███▎      | 27.4M/84.1M [00:09<00:13, 4.19MB/s]aclImdb_v1.tar.gz:  34%|███▍      | 28.6M/84.1M [00:10<00:13, 4.24MB/s]aclImdb_v1.tar.gz:  35%|███▌      | 29.8M/84.1M [00:10<00:10, 5.25MB/s]aclImdb_v1.tar.gz:  36%|███▋      | 30.5M/84.1M [00:10<00:12, 4.39MB/s]aclImdb_v1.tar.gz:  38%|███▊      | 31.7M/84.1M [00:10<00:11, 4.38MB/s]aclImdb_v1.tar.gz:  39%|███▉      | 32.9M/84.1M [00:10<00:09, 5.41MB/s]aclImdb_v1.tar.gz:  40%|████      | 33.7M/84.1M [00:11<00:17, 2.91MB/s]aclImdb_v1.tar.gz:  41%|████▏     | 34.9M/84.1M [00:11<00:13, 3.76MB/s]aclImdb_v1.tar.gz:  42%|████▏     | 35.6M/84.1M [00:11<00:19, 2.49MB/s]aclImdb_v1.tar.gz:  44%|████▎     | 36.7M/84.1M [00:12<00:17, 2.79MB/s]aclImdb_v1.tar.gz:  44%|████▍     | 37.2M/84.1M [00:13<00:42, 1.10MB/s]aclImdb_v1.tar.gz:  46%|████▌     | 38.4M/84.1M [00:13<00:30, 1.52MB/s]aclImdb_v1.tar.gz:  46%|████▋     | 39.0M/84.1M [00:13<00:32, 1.39MB/s]aclImdb_v1.tar.gz:  48%|████▊     | 40.1M/84.1M [00:14<00:25, 1.74MB/s]aclImdb_v1.tar.gz:  49%|████▉     | 41.3M/84.1M [00:14<00:18, 2.34MB/s]aclImdb_v1.tar.gz:  50%|████▉     | 42.0M/84.1M [00:14<00:16, 2.49MB/s]aclImdb_v1.tar.gz:  51%|█████▏    | 43.2M/84.1M [00:14<00:12, 3.26MB/s]aclImdb_v1.tar.gz:  52%|█████▏    | 43.9M/84.1M [00:14<00:12, 3.23MB/s]aclImdb_v1.tar.gz:  53%|█████▎    | 44.8M/84.1M [00:15<00:11, 3.34MB/s]aclImdb_v1.tar.gz:  55%|█████▍    | 46.0M/84.1M [00:15<00:08, 4.26MB/s]aclImdb_v1.tar.gz:  56%|█████▌    | 46.7M/84.1M [00:15<00:09, 3.84MB/s]aclImdb_v1.tar.gz:  57%|█████▋    | 47.9M/84.1M [00:15<00:07, 4.82MB/s]aclImdb_v1.tar.gz:  58%|█████▊    | 48.7M/84.1M [00:15<00:08, 4.22MB/s]aclImdb_v1.tar.gz:  59%|█████▉    | 49.5M/84.1M [00:16<00:08, 3.91MB/s]aclImdb_v1.tar.gz:  60%|██████    | 50.7M/84.1M [00:16<00:06, 4.89MB/s]aclImdb_v1.tar.gz:  61%|██████    | 51.5M/84.1M [00:16<00:07, 4.21MB/s]aclImdb_v1.tar.gz:  62%|██████▏   | 52.3M/84.1M [00:16<00:08, 3.63MB/s]aclImdb_v1.tar.gz:  63%|██████▎   | 52.8M/84.1M [00:16<00:10, 2.99MB/s]aclImdb_v1.tar.gz:  64%|██████▍   | 53.9M/84.1M [00:17<00:09, 3.15MB/s]aclImdb_v1.tar.gz:  65%|██████▍   | 54.3M/84.1M [00:17<00:08, 3.33MB/s]aclImdb_v1.tar.gz:  66%|██████▌   | 55.4M/84.1M [00:17<00:08, 3.57MB/s]aclImdb_v1.tar.gz:  67%|██████▋   | 56.6M/84.1M [00:17<00:06, 4.52MB/s]aclImdb_v1.tar.gz:  68%|██████▊   | 57.3M/84.1M [00:17<00:06, 3.85MB/s]aclImdb_v1.tar.gz:  70%|██████▉   | 58.5M/84.1M [00:18<00:05, 4.83MB/s]aclImdb_v1.tar.gz:  70%|███████   | 59.2M/84.1M [00:18<00:05, 4.15MB/s]aclImdb_v1.tar.gz:  72%|███████▏  | 60.2M/84.1M [00:18<00:05, 4.01MB/s]aclImdb_v1.tar.gz:  73%|███████▎  | 61.4M/84.1M [00:18<00:04, 5.00MB/s]aclImdb_v1.tar.gz:  74%|███████▍  | 62.1M/84.1M [00:18<00:05, 4.24MB/s]aclImdb_v1.tar.gz:  75%|███████▌  | 63.3M/84.1M [00:18<00:03, 5.25MB/s]aclImdb_v1.tar.gz:  76%|███████▌  | 64.1M/84.1M [00:19<00:04, 4.45MB/s]aclImdb_v1.tar.gz:  77%|███████▋  | 64.9M/84.1M [00:19<00:04, 4.04MB/s]aclImdb_v1.tar.gz:  79%|███████▊  | 66.1M/84.1M [00:19<00:03, 5.04MB/s]aclImdb_v1.tar.gz:  79%|███████▉  | 66.8M/84.1M [00:19<00:04, 4.29MB/s]aclImdb_v1.tar.gz:  81%|████████  | 68.0M/84.1M [00:20<00:03, 4.30MB/s]aclImdb_v1.tar.gz:  82%|████████▏ | 69.2M/84.1M [00:20<00:02, 5.31MB/s]aclImdb_v1.tar.gz:  83%|████████▎ | 70.0M/84.1M [00:20<00:03, 4.41MB/s]aclImdb_v1.tar.gz:  85%|████████▍ | 71.2M/84.1M [00:20<00:02, 4.40MB/s]aclImdb_v1.tar.gz:  86%|████████▌ | 72.3M/84.1M [00:20<00:02, 5.42MB/s]aclImdb_v1.tar.gz:  87%|████████▋ | 73.1M/84.1M [00:20<00:02, 4.47MB/s]aclImdb_v1.tar.gz:  88%|████████▊ | 74.3M/84.1M [00:21<00:01, 5.50MB/s]aclImdb_v1.tar.gz:  89%|████████▉ | 75.1M/84.1M [00:21<00:01, 4.60MB/s]aclImdb_v1.tar.gz:  90%|█████████ | 75.9M/84.1M [00:21<00:02, 4.10MB/s]aclImdb_v1.tar.gz:  92%|█████████▏| 77.1M/84.1M [00:21<00:01, 5.11MB/s]aclImdb_v1.tar.gz:  93%|█████████▎| 77.8M/84.1M [00:21<00:01, 4.32MB/s]aclImdb_v1.tar.gz:  94%|█████████▍| 79.0M/84.1M [00:22<00:01, 4.32MB/s]aclImdb_v1.tar.gz:  95%|█████████▌| 80.2M/84.1M [00:22<00:00, 5.34MB/s]aclImdb_v1.tar.gz:  96%|█████████▌| 81.0M/84.1M [00:22<00:00, 4.43MB/s]aclImdb_v1.tar.gz:  98%|█████████▊| 82.1M/84.1M [00:22<00:00, 4.41MB/s]aclImdb_v1.tar.gz:  99%|█████████▉| 83.3M/84.1M [00:22<00:00, 5.44MB/s]aclImdb_v1.tar.gz: 100%|█████████▉| 84.1M/84.1M [00:23<00:00, 4.48MB/s]aclImdb_v1.tar.gz: 100%|██████████| 84.1M/84.1M [00:23<00:00, 3.64MB/s]
+Finished loading Dataset 37.931655406951904
+- batche size 32
+- nr. of training batches 625
+- nr. of validation batches 157
+Creating model transformer_8_head_6_layers
+
+ epoch 0
+-- Train accuracy 0.645
+-- Validation accuracy 0.642
+-- Test accuracy 0.646
+Epoch time: 68.46669721603394
+==================================================
+
+ epoch 1
+-- Train accuracy 0.71
+-- Validation accuracy 0.692
+-- Test accuracy 0.689
+Epoch time: 68.97719120979309
+==================================================
+
+ epoch 2
+-- Train accuracy 0.657
+-- Validation accuracy 0.659
+-- Test accuracy 0.657
+Epoch time: 69.0008156299591
+==================================================
+
+ epoch 3
+-- Train accuracy 0.775
+-- Validation accuracy 0.724
+-- Test accuracy 0.719
+Epoch time: 69.10254216194153
+==================================================
+
+ epoch 4
+-- Train accuracy 0.793
+-- Validation accuracy 0.739
+-- Test accuracy 0.73
+Epoch time: 69.26334190368652
+==================================================
+
+ epoch 5
+-- Train accuracy 0.788
+-- Validation accuracy 0.735
+-- Test accuracy 0.729
+Epoch time: 69.28666281700134
+==================================================
+
+ epoch 6
+-- Train accuracy 0.809
+-- Validation accuracy 0.744
+-- Test accuracy 0.738
+Epoch time: 69.29770827293396
+==================================================
+
+ epoch 7
+-- Train accuracy 0.842
+-- Validation accuracy 0.745
+-- Test accuracy 0.742
+Epoch time: 69.34223246574402
+==================================================
+
+ epoch 8
+-- Train accuracy 0.859
+-- Validation accuracy 0.764
+-- Test accuracy 0.756
+Epoch time: 69.30150556564331
+==================================================
+
+ epoch 9
+-- Train accuracy 0.877
+-- Validation accuracy 0.769
+-- Test accuracy 0.757
+Epoch time: 69.28673911094666
+==================================================
+
+ epoch 10
+-- Train accuracy 0.879
+-- Validation accuracy 0.772
+-- Test accuracy 0.763
+Epoch time: 69.3644483089447
+==================================================
+
+ epoch 11
+-- Train accuracy 0.909
+-- Validation accuracy 0.772
+-- Test accuracy 0.765
+Epoch time: 69.41442632675171
+==================================================
+
+ epoch 12
+-- Train accuracy 0.875
+-- Validation accuracy 0.76
+-- Test accuracy 0.751
+Epoch time: 69.40240526199341
+==================================================
+
+ epoch 13
+-- Train accuracy 0.917
+-- Validation accuracy 0.774
+-- Test accuracy 0.769
+Epoch time: 69.41643118858337
+==================================================
+
+ epoch 14
+-- Train accuracy 0.946
+-- Validation accuracy 0.776
+-- Test accuracy 0.768
+Epoch time: 69.45958685874939
+==================================================
+
+ epoch 15
+-- Train accuracy 0.95
+-- Validation accuracy 0.778
+-- Test accuracy 0.77
+Epoch time: 69.4209885597229
+==================================================
+
+ epoch 16
+-- Train accuracy 0.75
+-- Validation accuracy 0.695
+-- Test accuracy 0.686
+Epoch time: 69.35366249084473
+==================================================
+
+ epoch 17
+-- Train accuracy 0.959
+-- Validation accuracy 0.778
+-- Test accuracy 0.765
+Epoch time: 69.31481647491455
+==================================================
+
+ epoch 18
+-- Train accuracy 0.96
+-- Validation accuracy 0.78
+-- Test accuracy 0.766
+Epoch time: 69.3366117477417
+==================================================
+
+ epoch 19
+-- Train accuracy 0.972
+-- Validation accuracy 0.777
+-- Test accuracy 0.767
+Epoch time: 69.37717175483704
+==================================================
+Final test accuracy
+-- Test accuracy 0.767
+**************************************************
+**************************************************
+
+
+
+Creating model transformer_8_head_12_layers
+
+ epoch 0
+-- Train accuracy 0.668
+-- Validation accuracy 0.652
+-- Test accuracy 0.657
+Epoch time: 114.27454781532288
+==================================================
+
+ epoch 1
+-- Train accuracy 0.715
+-- Validation accuracy 0.684
+-- Test accuracy 0.692
+Epoch time: 114.46393847465515
+==================================================
+
+ epoch 2
+-- Train accuracy 0.738
+-- Validation accuracy 0.707
+-- Test accuracy 0.71
+Epoch time: 114.46591782569885
+==================================================
+
+ epoch 3
+-- Train accuracy 0.769
+-- Validation accuracy 0.727
+-- Test accuracy 0.724
+Epoch time: 114.52448415756226
+==================================================
+
+ epoch 4
+-- Train accuracy 0.795
+-- Validation accuracy 0.744
+-- Test accuracy 0.737
+Epoch time: 114.48492455482483
+==================================================
+
+ epoch 5
+-- Train accuracy 0.766
+-- Validation accuracy 0.708
+-- Test accuracy 0.705
+Epoch time: 114.42463374137878
+==================================================
+
+ epoch 6
+-- Train accuracy 0.799
+-- Validation accuracy 0.723
+-- Test accuracy 0.72
+Epoch time: 114.43463110923767
+==================================================
+
+ epoch 7
+-- Train accuracy 0.827
+-- Validation accuracy 0.743
+-- Test accuracy 0.741
+Epoch time: 114.47478866577148
+==================================================
+
+ epoch 8
+-- Train accuracy 0.849
+-- Validation accuracy 0.76
+-- Test accuracy 0.753
+Epoch time: 114.57120132446289
+==================================================
+
+ epoch 9
+-- Train accuracy 0.883
+-- Validation accuracy 0.773
+-- Test accuracy 0.764
+Epoch time: 114.61543989181519
+==================================================
+
+ epoch 10
+-- Train accuracy 0.864
+-- Validation accuracy 0.757
+-- Test accuracy 0.75
+Epoch time: 114.59315156936646
+==================================================
+
+ epoch 11
+-- Train accuracy 0.911
+-- Validation accuracy 0.772
+-- Test accuracy 0.765
+Epoch time: 114.51510286331177
+==================================================
+
+ epoch 12
+-- Train accuracy 0.927
+-- Validation accuracy 0.777
+-- Test accuracy 0.767
+Epoch time: 114.49806451797485
+==================================================
+
+ epoch 13
+-- Train accuracy 0.887
+-- Validation accuracy 0.762
+-- Test accuracy 0.75
+Epoch time: 114.48633670806885
+==================================================
+
+ epoch 14
+-- Train accuracy 0.943
+-- Validation accuracy 0.778
+-- Test accuracy 0.77
+Epoch time: 114.50898456573486
+==================================================
+
+ epoch 15
+-- Train accuracy 0.902
+-- Validation accuracy 0.737
+-- Test accuracy 0.738
+Epoch time: 114.49489092826843
+==================================================
+
+ epoch 16
+-- Train accuracy 0.966
+-- Validation accuracy 0.774
+-- Test accuracy 0.763
+Epoch time: 114.5279757976532
+==================================================
+
+ epoch 17
+-- Train accuracy 0.947
+-- Validation accuracy 0.763
+-- Test accuracy 0.75
+Epoch time: 114.49783110618591
+==================================================
+
+ epoch 18
+-- Train accuracy 0.973
+-- Validation accuracy 0.777
+-- Test accuracy 0.761
+Epoch time: 114.47067189216614
+==================================================
+
+ epoch 19
+-- Train accuracy 0.978
+-- Validation accuracy 0.776
+-- Test accuracy 0.766
+Epoch time: 114.38145232200623
+==================================================
+Final test accuracy
+-- Test accuracy 0.766
+**************************************************
+**************************************************
+
+
+

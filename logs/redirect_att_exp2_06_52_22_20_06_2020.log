@@ -1,0 +1,303 @@
+Running the experiment exp2 on GPU 0
+Running on the device cuda:0
+Loading Dataset
+Finished loading Dataset 5.337328195571899
+- batche size 32
+- nr. of training batches 625
+- nr. of validation batches 157
+Creating model transformer_16_head_6_layers
+
+ epoch 0
+-- Train accuracy 0.642
+-- Validation accuracy 0.651
+-- Test accuracy 0.633
+Epoch time: 85.26907777786255
+==================================================
+
+ epoch 1
+-- Train accuracy 0.667
+-- Validation accuracy 0.65
+-- Test accuracy 0.647
+Epoch time: 85.69630146026611
+==================================================
+
+ epoch 2
+-- Train accuracy 0.734
+-- Validation accuracy 0.715
+-- Test accuracy 0.7
+Epoch time: 85.81125116348267
+==================================================
+
+ epoch 3
+-- Train accuracy 0.725
+-- Validation accuracy 0.689
+-- Test accuracy 0.682
+Epoch time: 86.13576126098633
+==================================================
+
+ epoch 4
+-- Train accuracy 0.779
+-- Validation accuracy 0.735
+-- Test accuracy 0.727
+Epoch time: 86.1692521572113
+==================================================
+
+ epoch 5
+-- Train accuracy 0.814
+-- Validation accuracy 0.756
+-- Test accuracy 0.744
+Epoch time: 86.21164631843567
+==================================================
+
+ epoch 6
+-- Train accuracy 0.818
+-- Validation accuracy 0.758
+-- Test accuracy 0.743
+Epoch time: 86.23878049850464
+==================================================
+
+ epoch 7
+-- Train accuracy 0.85
+-- Validation accuracy 0.771
+-- Test accuracy 0.756
+Epoch time: 86.24558734893799
+==================================================
+
+ epoch 8
+-- Train accuracy 0.868
+-- Validation accuracy 0.768
+-- Test accuracy 0.756
+Epoch time: 86.24241614341736
+==================================================
+
+ epoch 9
+-- Train accuracy 0.861
+-- Validation accuracy 0.759
+-- Test accuracy 0.741
+Epoch time: 86.25189566612244
+==================================================
+
+ epoch 10
+-- Train accuracy 0.86
+-- Validation accuracy 0.759
+-- Test accuracy 0.75
+Epoch time: 86.22878098487854
+==================================================
+
+ epoch 11
+-- Train accuracy 0.897
+-- Validation accuracy 0.771
+-- Test accuracy 0.76
+Epoch time: 86.29143214225769
+==================================================
+
+ epoch 12
+-- Train accuracy 0.79
+-- Validation accuracy 0.706
+-- Test accuracy 0.689
+Epoch time: 86.2731523513794
+==================================================
+
+ epoch 13
+-- Train accuracy 0.916
+-- Validation accuracy 0.769
+-- Test accuracy 0.761
+Epoch time: 86.24711084365845
+==================================================
+
+ epoch 14
+-- Train accuracy 0.819
+-- Validation accuracy 0.735
+-- Test accuracy 0.721
+Epoch time: 86.24006938934326
+==================================================
+
+ epoch 15
+-- Train accuracy 0.945
+-- Validation accuracy 0.78
+-- Test accuracy 0.765
+Epoch time: 86.28113341331482
+==================================================
+
+ epoch 16
+-- Train accuracy 0.903
+-- Validation accuracy 0.745
+-- Test accuracy 0.725
+Epoch time: 86.26569604873657
+==================================================
+
+ epoch 17
+-- Train accuracy 0.895
+-- Validation accuracy 0.756
+-- Test accuracy 0.736
+Epoch time: 86.25206327438354
+==================================================
+
+ epoch 18
+-- Train accuracy 0.909
+-- Validation accuracy 0.766
+-- Test accuracy 0.751
+Epoch time: 86.29356575012207
+==================================================
+
+ epoch 19
+-- Train accuracy 0.945
+-- Validation accuracy 0.767
+-- Test accuracy 0.757
+Epoch time: 86.28898811340332
+==================================================
+Final test accuracy
+-- Test accuracy 0.757
+**************************************************
+**************************************************
+
+
+
+Creating model transformer_16_head_12_layers
+
+ epoch 0
+-- Train accuracy 0.539
+-- Validation accuracy 0.559
+-- Test accuracy 0.546
+Epoch time: 148.06756734848022
+==================================================
+
+ epoch 1
+-- Train accuracy 0.704
+-- Validation accuracy 0.696
+-- Test accuracy 0.68
+Epoch time: 148.31420731544495
+==================================================
+
+ epoch 2
+-- Train accuracy 0.697
+-- Validation accuracy 0.673
+-- Test accuracy 0.666
+Epoch time: 148.37775015830994
+==================================================
+
+ epoch 3
+-- Train accuracy 0.747
+-- Validation accuracy 0.728
+-- Test accuracy 0.712
+Epoch time: 148.46722435951233
+==================================================
+
+ epoch 4
+-- Train accuracy 0.799
+-- Validation accuracy 0.743
+-- Test accuracy 0.725
+Epoch time: 148.4710292816162
+==================================================
+
+ epoch 5
+-- Train accuracy 0.766
+-- Validation accuracy 0.723
+-- Test accuracy 0.704
+Epoch time: 148.45851373672485
+==================================================
+
+ epoch 6
+-- Train accuracy 0.828
+-- Validation accuracy 0.761
+-- Test accuracy 0.739
+Epoch time: 148.49643349647522
+==================================================
+
+ epoch 7
+-- Train accuracy 0.835
+-- Validation accuracy 0.762
+-- Test accuracy 0.739
+Epoch time: 148.45395612716675
+==================================================
+
+ epoch 8
+-- Train accuracy 0.817
+-- Validation accuracy 0.752
+-- Test accuracy 0.731
+Epoch time: 148.4618878364563
+==================================================
+
+ epoch 9
+-- Train accuracy 0.878
+-- Validation accuracy 0.765
+-- Test accuracy 0.74
+Epoch time: 148.38859128952026
+==================================================
+
+ epoch 10
+-- Train accuracy 0.856
+-- Validation accuracy 0.764
+-- Test accuracy 0.746
+Epoch time: 148.43034982681274
+==================================================
+
+ epoch 11
+-- Train accuracy 0.892
+-- Validation accuracy 0.76
+-- Test accuracy 0.731
+Epoch time: 148.42706108093262
+==================================================
+
+ epoch 12
+-- Train accuracy 0.855
+-- Validation accuracy 0.759
+-- Test accuracy 0.743
+Epoch time: 148.43978095054626
+==================================================
+
+ epoch 13
+-- Train accuracy 0.88
+-- Validation accuracy 0.737
+-- Test accuracy 0.717
+Epoch time: 148.44778490066528
+==================================================
+
+ epoch 14
+-- Train accuracy 0.958
+-- Validation accuracy 0.787
+-- Test accuracy 0.764
+Epoch time: 148.43376922607422
+==================================================
+
+ epoch 15
+-- Train accuracy 0.969
+-- Validation accuracy 0.781
+-- Test accuracy 0.751
+Epoch time: 148.39073061943054
+==================================================
+
+ epoch 16
+-- Train accuracy 0.94
+-- Validation accuracy 0.748
+-- Test accuracy 0.725
+Epoch time: 148.36801934242249
+==================================================
+
+ epoch 17
+-- Train accuracy 0.879
+-- Validation accuracy 0.732
+-- Test accuracy 0.706
+Epoch time: 148.29621028900146
+==================================================
+
+ epoch 18
+-- Train accuracy 0.989
+-- Validation accuracy 0.786
+-- Test accuracy 0.757
+Epoch time: 148.19794154167175
+==================================================
+
+ epoch 19
+-- Train accuracy 0.994
+-- Validation accuracy 0.782
+-- Test accuracy 0.759
+Epoch time: 148.03214311599731
+==================================================
+Final test accuracy
+-- Test accuracy 0.759
+**************************************************
+**************************************************
+
+
+
