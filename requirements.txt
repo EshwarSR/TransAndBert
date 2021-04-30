@@ -33,6 +33,6 @@ torch==1.2.0
 torchtext==0.4.0
 tqdm==4.34.0
 typed-ast==1.4.1
-urllib3==1.25.3
+urllib3==1.25.8
 Werkzeug==0.15.5
 wrapt==1.12.1
