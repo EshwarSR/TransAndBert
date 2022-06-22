@@ -14,7 +14,7 @@ lazy-object-proxy==1.4.3
 Markdown==3.1.1
 matplotlib==3.2.2
 mccabe==0.6.1
-numpy==1.17.0
+numpy==1.22.0
 protobuf==3.9.1
 pycodestyle==2.6.0
 pylint==2.5.3
