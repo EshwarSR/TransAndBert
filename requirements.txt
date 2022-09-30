@@ -8,7 +8,7 @@ future==0.17.1
 grpcio==1.23.0
 idna==2.8
 isort==4.3.21
-joblib==0.15.1
+joblib==1.2.0
 kiwisolver==1.2.0
 lazy-object-proxy==1.4.3
 Markdown==3.1.1
